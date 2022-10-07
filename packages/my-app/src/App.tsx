@@ -1,11 +1,14 @@
 import * as React from "react";
-import { HelloWorld, HDInput } from "my-module";
+import * as HDModule from "my-module";
+import * as HDModule1 from "module-1";
 
 function App() {
   return (
     <div>
-      <HelloWorld />
-      <HDInput />
+      <HDModule.HelloWorld />
+      <HDModule.HDInput />
+      <HDModule.HDTextarea />
+      <HDModule1.HDTextarea />
     </div>
   );
 }
